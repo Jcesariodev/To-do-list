@@ -50,3 +50,9 @@ function carregartarefas() {
 }
 
 carregartarefas()
+
+document.querySelector("input").addEventListener("keydown", function (evento) {
+    if (evento.key === "Enter") {
+        adicionartarefa()
+    }
+})
