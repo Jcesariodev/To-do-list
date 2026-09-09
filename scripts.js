@@ -34,6 +34,8 @@ function adicionartarefa() {
     salvartarefas()
 }
 
-
-
+function deletartarefa(li) {
+   li.parentElement.remove()
+    salvartarefas()
+}
 
