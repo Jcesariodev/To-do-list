@@ -44,3 +44,9 @@ function concluirtarefa(check) {
     salvartarefas()
 }
 
+function carregartarefas() {
+    let tarefas = JSON.parse(localStorage.getItem("tarefas")) || []
+    tarefas.forEach(t => criarLi(t.texto, t.concluida))
+}
+
+carregartarefas()
