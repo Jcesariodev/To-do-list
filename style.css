@@ -1,0 +1,68 @@
+
+body{
+    background-color:black;
+    max-width: 450px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size:40px;
+    color:blueviolet;
+    text-align:center;
+}
+
+input{
+    height:40px;
+    border:2px solid blueviolet;
+    background-color:black;
+    color:white;
+    outline:none;
+    width: 70%;
+}
+
+button {
+    border: none;
+    height: 45px;
+    background-color:blueviolet;
+    color:white;
+    cursor:pointer;
+    transition: background-color 0.5s ease;
+}
+
+button:hover {
+    background-color:rgb(204, 0, 255);
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+li{
+    background-color:rgb(161, 54, 228);
+    color:rgb(255, 255, 255);
+    font-size:20px;
+    margin:10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    height: 15px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span{
+    cursor:pointer;
+    color:rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+.concluida {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.texto{
+    color: white;
+}
