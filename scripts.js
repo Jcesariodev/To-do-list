@@ -39,3 +39,8 @@ function deletartarefa(li) {
     salvartarefas()
 }
 
+function concluirtarefa(check) {
+    check.parentElement.querySelector(".texto").classList.toggle("concluida")
+    salvartarefas()
+}
+
