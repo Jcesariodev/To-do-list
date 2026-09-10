@@ -1,37 +1,52 @@
 
+
 body{
-    background-color:black;
-    max-width: 450px;
+    background-color:white;
+    color:black;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    max-width: 350px;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.escuro {
+    --cor-fundo: #121212;
+    --cor-texto: #ffffff;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+input {
+    background-color:var(--cor-fundo);
+    color:var(--cor-texto);
+    height:35px;
+    border:2px solid blueviolet;
+    outline:none;
+    width: 100%;
+}
+
 h1{
     font-size:40px;
     color:blueviolet;
     text-align:center;
 }
 
-input{
-    height:40px;
-    border:2px solid blueviolet;
-    background-color:black;
-    color:white;
-    outline:none;
-    width: 70%;
-}
-
 button {
     border: none;
-    height: 45px;
+    height: 55px;
+    width: 100px;
     background-color:blueviolet;
     color:white;
     cursor:pointer;
     transition: background-color 0.5s ease;
-}
+}   
 
 button:hover {
     background-color:rgb(204, 0, 255);
 }
+
+
 
 ul{
     list-style-type: none;
@@ -65,4 +80,30 @@ span{
 
 .texto{
     color: white;
+}
+
+.linha-adicionar {
+    display: flex;
+    gap: 8px;
+    padding-right: 140px;
+    width: 100%;
+}
+.linha-adicionar input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.linha-adicionar button {
+    flex-shrink: 0;
+}
+
+.botao-tema {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+    width: 80px;
+    height: 40px;
 }

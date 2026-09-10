@@ -56,3 +56,14 @@ document.querySelector("input").addEventListener("keydown", function (evento) {
         adicionartarefa()
     }
 })
+
+function alterarTema() {
+    document.body.classList.toggle("escuro")
+
+    let botao = document.querySelector(".botao-tema")
+    if (document.body.classList.contains("escuro")) {
+        botao.innerText = "🌞 Claro"
+    } else {
+        botao.innerText = "🌙 Escuro"
+    }
+}
